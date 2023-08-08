@@ -1,0 +1,17 @@
+# Go binary
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go executável
+bin/
+# Arquivos temporários
+tmp/
+# Arquivos de cache
+*.log
+
+# Air binaries (ferramenta de hot-reloading)
+.air

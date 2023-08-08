@@ -1,0 +1,12 @@
+# air.toml
+
+root = "."
+tmp_dir = "tmp"
+build_dir = "tmp"
+
+[build]
+  bin = "tmp/main"
+
+[log]
+  prefix = "main"
+  output = "tmp/main.log"
