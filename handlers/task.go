@@ -113,6 +113,8 @@ func UpdateTask(c *fiber.Ctx) error {
 		return err
 	}
 
+	task.ID = ""
+
 	task.UpdatedAt = time.Now()
 
 	_, err := collection.UpdateOne(context.Background(), bson.M{"_id": id}, bson.M{"$set": task})
